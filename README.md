@@ -86,4 +86,7 @@ PowerShell – PowerShell support if working cross-platform.
 ```sh
 pip install pandas
 ```
-
+### 4. Install Pytest
+```sh
+ pip install pytest
+```
