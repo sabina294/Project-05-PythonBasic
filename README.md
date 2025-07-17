@@ -87,8 +87,3 @@ PowerShell – PowerShell support if working cross-platform.
 pip install pandas
 ```
 
-### 4. Install Pandas library
-
-```sh
-pip install pandas
-```
