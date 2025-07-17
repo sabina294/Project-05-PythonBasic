@@ -92,5 +92,5 @@ pip install pandas
 ```
 ### 5. Install HTML Report Generate
 ```sh
- pip install pytest -html
+pip install pytest-html
 ```
