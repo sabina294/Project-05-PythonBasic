@@ -94,3 +94,9 @@ pip install pandas
 ```sh
 pip install pytest-html
 ```
+### 6. Install Allure Report Generate
+```sh
+pip install allure-pytest
+
+```
+
