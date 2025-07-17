@@ -1,4 +1,4 @@
-# Python Setup
+# Python Setup In Ubuntu
 
 ### 1. Install Python 3.13.5 from Source
 
