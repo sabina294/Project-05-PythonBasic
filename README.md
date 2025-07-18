@@ -148,7 +148,15 @@ pip install allure-pytest
 ```sh
 pytest --alluredir=%allure_result_folder%
 ```
-### 19. Finally Allure Report
+### 19. Run Allure Report 
 ```sh
-allure serve %allure_result_folder%
+pytest --alluredir=%allure_result_folder%
+```
+### 20. Install Pytest Sugar report Generate
+```sh
+pip install pytest-sugar
+```
+### 21. Run Sugar Report
+```sh
+pytest 
 ```
