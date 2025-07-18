@@ -82,7 +82,6 @@ PowerShell – PowerShell support if working cross-platform.
 
 ```
 ### 3. Install Pandas package (Excel, Json, Csv -Data Analysis)
-
 ```sh
 pip install pandas
 ```
@@ -90,13 +89,66 @@ pip install pandas
 ```sh
  pip install pytest
 ```
-### 5. Install HTML Report Generate
+### 5. Install Parallel Execution Run test/Functio in parallel
+```sh
+ pip install pytest-xdist
+```
+### 6. Run Test Functio in parallel
+```sh
+pytest -n 3
+```
+### 7. Install Pytest HTML Report Generate
 ```sh
 pip install pytest-html
 ```
-### 6. Install Allure Report Generate
+### 8. Run HTML Report Open Browser Chrome
+```sh
+pytest --html=report.html
+```
+### 9. Install Pytest md Report Generate
+```sh
+pip install pytest-md-report
+```
+### 10. Run md Report Open Terminal Show Report
+```sh
+pytest --md-report --md-report-verbose=1
+```
+### 11. Install  Java for Allure Report Generate
+```sh
+sudo apt update
+sudo apt install default-jdk -y
+```
+### 12.  Verify installation Java
+```sh
+java -version
+```
+### 13. Download Allure commandline
+```sh
+VERSION=$(curl -s https://api.github.com/repos/allure-framework/allure2/releases/latest | grep tag_name | cut -d '"' -f 4)
+wget https://github.com/allure-framework/allure2/releases/download/${VERSION}/allure-${VERSION}.tgz
+```
+### 14. Extract and move to /opt
+```sh
+tar -xvzf allure-${VERSION}.tgz
+sudo mv allure-${VERSION} /opt/allure
+```
+### 15. Add to PATH
+```sh
+sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+```
+### 16. Verify installation
+```sh
+allure --version
+```
+### 17. Install Allure Report Generate
 ```sh
 pip install allure-pytest
-
 ```
-
+### 18. Run Allure Report 
+```sh
+pytest --alluredir=%allure_result_folder%
+```
+### 19. Finally Allure Report
+```sh
+allure serve %allure_result_folder%
+```
