@@ -178,3 +178,15 @@ pip install pytest-sugar
 ```sh
 pytest 
 ```
+### 22. Install Selenium
+
+Selenium is used in Python mainly for automating web browsers, and it’s a powerful tool for developers, testers, and data analysts.
+
+```sh
+pip install selenium
+```
+### 23. Version Check Selenium
+```sh
+pip show selenium
+```
+
