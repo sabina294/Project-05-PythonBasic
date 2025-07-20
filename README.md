@@ -189,4 +189,11 @@ pip install selenium
 ```sh
 pip show selenium
 ```
+### 24. Install Jenkins
+
+Jenkins with Python to automate testing, building, and deploying your Python applications.
+
+```sh
+pip install python-jenkins
+```
 
