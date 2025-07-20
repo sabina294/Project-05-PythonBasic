@@ -196,4 +196,12 @@ Jenkins with Python to automate testing, building, and deploying your Python app
 ```sh
 pip install python-jenkins
 ```
+### 25. Create Requirements
 
+```sh
+pip freeze > requirements.txt
+```
+### 26. Nedded same package Create Requirements
+```sh
+pip install -r requirements.txt
+```
